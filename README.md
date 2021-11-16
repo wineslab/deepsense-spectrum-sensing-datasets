@@ -1,7 +1,7 @@
-# Dataset Release: A Real World IEEE 802.11 a/g and Simulated LTE-M Uplink Dataset for Spectrum Hole Detection
+# Dataset Release: A Real World IEEE 802.11 a/g Dataset and Simulated LTE-M Uplink Dataset for Spectrum Hole Detection
 
 
-This repository contains the code and links to the datasets curated and used in _[DeepSense: Fast Wideband Spectrum Sensing Through Real-Time In-the-Loop Deep Learning]_. The paper can be found for free here and cited using they key or citation found at the bottom:
+This repository contains the code and links to the datasets curated and used in _[DeepSense: Fast Wideband Spectrum Sensing Through Real-Time In-the-Loop Deep Learning]_. The paper can be found for free [here] and cited using the key or citation found at the bottom
 
 
 
@@ -9,6 +9,20 @@ This repository contains the code and links to the datasets curated and used in 
 - SDR 802.11 a/g
 - Simulated LTE-M Uplink
 
+## Overview
+
+Spectrum sharing will be a key technology to tackle spectrum  scarcity  in  the  sub-6  GHz  bands.  To  fairly  access  the shared bandwidth, wireless users will necessarily need to quickly sense  large  portions  of  spectrum  and  opportunistically  access unutilized  bands. To that end we have developed two datasets to help evaluate spectrum sensing methodolgies: a over the air real-world dataset collected using 5 USRP N210s with 802.11 a/g PHY layer waveforms and a simulated MATLAB dataset with LTE-M uplink PHY layer waveforms.
+
+### Simulated LTE-M Uplink:
+
+This dataset is created utilizing MATLABs LTE Toolbox to simulate LTE-M uplink transmissions in the Physical Uplink Shared Channel (PUSCH) over a 10-MHz-wide band. We split the spectrum band into 16 non-overlapping sub-bands (3 resource blocks or 540kHz wide), each acting as their own channel allocated to a user. The dataset that we used can be found using the link above but if one were to wish to generate their own they can use ```lte/generateLTEDataset.m```. This script takes heavy inspiration from the following [MATLAB] example which is a highly recommended read to understand the code.
+
+### SDR 802.11 a/g:
+This dataset emulates four 5-MHz-wide non-overlapping channels, occupying a total of 20 MHz bandwidth. We collected this dataset using 5 USRP N210s SDRs running GNU Radio. Four USRPs acted as WiFi transmitters, each with 64 sub-carriers, and one as the receiver sampling at 20MS/s to obtain the whole bandwidth. Data was collected from two separate days with two different transmitter orientations to give the dataset diversity in the SNR and  channel  effects  it  contained. Layout is shown below.
+
+<img src="./sdr_layout.png" width="700">
+
+The dataset contains a 32 ```.bin``` files, 16 for the first day and 16 for the second day each of the 16 representing a different combination of bandwidth occupation (i.e. ```1101_day2.bin``` means the first, second, and fourth channels are occupied, collected on the second day). 
 
 ## Citation
 
@@ -32,3 +46,5 @@ D. Uvaydov, S. D’Oro, F. Restuccia and T. Melodia, "DeepSense: Fast Wideband S
 [//]: # 
 
    [DeepSense: Fast Wideband Spectrum Sensing Through Real-Time In-the-Loop Deep Learning]: <https://ieeexplore.ieee.org/abstract/document/9488764>
+   [here]: <https://ece.northeastern.edu/wineslab/papers/UvaydovInfocom21.pdf>
+   [MATLAB]: <https://www.mathworks.com/help/lte/ug/lte-m-uplink-waveform-generation.html>
