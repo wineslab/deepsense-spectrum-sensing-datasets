@@ -1,4 +1,4 @@
-# Dataset Release: A Real World IEEE 802.11 a/g Dataset and Simulated LTE-M Uplink Dataset for Spectrum Sensing
+# Dataset Release: A Real World IEEE 802.11 a/g Dataset and Simulated LTE-M Uplink Dataset for Spectrum Hole Detection
 
 
 This repository contains the code and links to the datasets curated and used in _[DeepSense: Fast Wideband Spectrum Sensing Through Real-Time In-the-Loop Deep Learning]_. The paper can be found for free [here] and cited using the key or citation found at the bottom
@@ -27,7 +27,7 @@ The dataset contains a 32 ```.bin``` files, 16 for the first day and 16 for the 
 import numpy as np
 time_series_signal = np.fromfile(filepath, dtype=np.complex64, count=-1, offset=0)
 ```
-Furthermore we have provided two scripts that first converts each ```.bin``` to an ```.h5```  file (```sdr_wifi_code/bin2hdf5.py```) and then generates a training and testing dataset with its corresponding labels (```sdr_wifi_code/preprocessing.py```).
+Furthermore we have provided two scripts that first converts each ```.bin``` to an ```.h5```  file (```sdr_wifi_code/bin2hdf5.py```) and then generates a training and testing dataset with its corresponding labels in two large ```.h5``` files (```sdr_wifi_code/preprocessing.py```).
 
 ## Citation
 
