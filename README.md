@@ -1,4 +1,4 @@
-# Dataset Release: A Real World IEEE 802.11 a/g Dataset and Simulated LTE-M Uplink Dataset for Spectrum Hole Detection
+# Dataset Release: A Real World IEEE 802.11 a/g Dataset and Simulated LTE-M Uplink Dataset for Spectrum Sensing
 
 
 This repository contains the code and links to the datasets curated and used in _[DeepSense: Fast Wideband Spectrum Sensing Through Real-Time In-the-Loop Deep Learning]_. The paper can be found for free [here] and cited using the key or citation found at the bottom
