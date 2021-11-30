@@ -6,8 +6,8 @@ This repository contains the code and links to the datasets curated and used in 
 
 
 ## Dataset Links
-- SDR 802.11 a/g
-- Simulated LTE-M Uplink
+- [SDR 802.11 a/g]
+- [Simulated LTE-M Uplink]
 
 ## Overview
 
@@ -24,7 +24,7 @@ The dataset contains a 32 ```.bin``` files, 16 for the first day and 16 for the 
 import numpy as np
 time_series_signal = np.fromfile(filepath, dtype=np.complex64, count=-1, offset=0)
 ```
-Furthermore we have provided two scripts that first converts each ```.bin``` to an ```.h5```  file (```sdr_wifi_code/bin2hdf5.py```) and then generates a training and testing dataset with its corresponding labels in two large ```.h5``` files (```sdr_wifi_code/preprocessing.py```).
+Furthermore we have provided two scripts that first converts each ```.bin``` to an ```.h5```  file (```sdr_wifi_code/bin2hdf5.py```) and then generates a training and testing dataset with its corresponding labels in two large ```.h5``` files (```sdr_wifi_code/preprocessing.py```). This is the same workflow that we follow for our paper before training.
 
 ### Simulated LTE-M Uplink:
 
@@ -51,6 +51,8 @@ D. Uvaydov, S. D’Oro, F. Restuccia and T. Melodia, "DeepSense: Fast Wideband S
 
 [//]: # 
 
+   [SDR 802.11 a/g]: <https://repository.library.northeastern.edu/files/neu:n009w2985>
+   [Simulated LTE-M Uplink]: <https://repository.library.northeastern.edu/files/neu:n009w299f>
    [DeepSense: Fast Wideband Spectrum Sensing Through Real-Time In-the-Loop Deep Learning]: <https://ieeexplore.ieee.org/abstract/document/9488764>
    [here]: <https://ece.northeastern.edu/wineslab/papers/UvaydovInfocom21.pdf>
    [MATLAB]: <https://www.mathworks.com/help/lte/ug/lte-m-uplink-waveform-generation.html>
