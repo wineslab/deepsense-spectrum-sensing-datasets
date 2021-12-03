@@ -32,7 +32,7 @@ This dataset is created utilizing MATLABs LTE Toolbox to simulate LTE-M uplink t
 
 ## Training/Testing
 
-We have provided a barebones script to train/test the network in the paper used for the WiFi and LTE datasets found in ```train_test_CNN.py```. Running the code as is will train for the SDR dataset that is generated using the scripts in ```sdr_wifi_code``` (first running ```bin2hdf5.py``` and then ```preprocessing.py```). To train simply enter ```python train_test_CNN.py train``` and to test ```python train_test_CNN.py test```. 
+We have provided a barebones script to train/test the network in the paper used for the WiFi and LTE datasets found in ```train_test_CNN.py```. Running the code as is will train for the SDR dataset that is generated using the scripts in ```sdr_wifi_code``` (first running ```bin2hdf5.py``` and then ```preprocessing.py```). To train enter ```python train_test_CNN.py train``` into the command line and to test ```python train_test_CNN.py test```. 
 
 ## Contact
 
