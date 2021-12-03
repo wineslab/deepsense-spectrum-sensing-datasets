@@ -30,6 +30,15 @@ Furthermore we have provided two scripts that first converts each ```.bin``` to 
 
 This dataset is created utilizing MATLABs LTE Toolbox to simulate LTE-M uplink transmissions in the Physical Uplink Shared Channel (PUSCH) over a 10-MHz-wide band. We split the spectrum band into 16 non-overlapping sub-bands (3 resource blocks or 540kHz wide), each acting as their own channel allocated to a user. The dataset that we used can be found using the link above but if one were to wish to generate their own they can use ```sim_lte_code/generateLTEDataset.m```. This script takes heavy inspiration from the following [MATLAB] example which is a highly recommended read to understand the code. The code will generate two ```.h5``` files, one as a training set and another as a test set for a specific SNR and input size to the CNN (i.e. ```lte_neg10_32_train.h5``` is the training data for a channel that experiences different holes with an SNR of -10 dBW and broken down into training samples containing 32 I/Q samples each). Within the ```.h5``` file, whether training or testing, there will be two groups ```'X'``` and ```'y'``` which will contain the I/Q training samples and labels respectively. We have provided our dataset for a 32 I/Q input size at varying SNRs as used in our final network.
 
+## Training/Testing
+
+We have provided a barebones script to train/test the network in the paper used for the WiFi and LTE datasets found in ```train_test_CNN.py```. Running the code as is will train for the SDR dataset that is generated using the scripts in ```sdr_wifi_code``` (first running ```bin2hdf5.py``` and then ```preprocessing.py```). To train simply enter ```python train_test_CNN.py train``` and to test ```python train_test_CNN.py test```. 
+
+## Contact
+
+Daniel Uvaydov: uvaydov.d@northeastern.edu
+Salvatore D'Oro: s.doro@northeastern.edu
+
 ## Citation
 
 D. Uvaydov, S. D’Oro, F. Restuccia and T. Melodia, "DeepSense: Fast Wideband Spectrum Sensing Through Real-Time In-the-Loop Deep Learning," IEEE INFOCOM 2021 - IEEE Conference on Computer Communications, 2021, pp. 1-10, doi: 10.1109/INFOCOM42981.2021.9488764.
