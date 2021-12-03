@@ -37,6 +37,7 @@ We have provided a barebones script to train/test the network in the paper used 
 ## Contact
 
 Daniel Uvaydov: uvaydov.d@northeastern.edu
+
 Salvatore D'Oro: s.doro@northeastern.edu
 
 ## Citation
