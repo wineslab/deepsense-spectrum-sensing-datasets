@@ -1,7 +1,7 @@
 # Dataset Release: A Real World IEEE 802.11 a/g Dataset and Simulated LTE-M Uplink Dataset for Spectrum Sensing
 
 
-This repository contains the code and links to the datasets curated and used in _[DeepSense: Fast Wideband Spectrum Sensing Through Real-Time In-the-Loop Deep Learning]_. The paper can be found for free [here] and cited using the key or citation found at the bottom
+This repository contains the code and links to the datasets curated and used in [D. Uvaydov, S. D’Oro, F. Restuccia and T. Melodia, "DeepSense: Fast Wideband Spectrum Sensing Through Real-Time In-the-Loop Deep Learning," IEEE INFOCOM 2021 - IEEE Conference on Computer Communications, 2021, pp. 1-10, doi: 10.1109/INFOCOM42981.2021.9488764.] The paper can be found for free [here] and cited using the key or citation found at the bottom
 
 
 
@@ -63,6 +63,6 @@ D. Uvaydov, S. D’Oro, F. Restuccia and T. Melodia, "DeepSense: Fast Wideband S
 
    [SDR 802.11 a/g]: <https://repository.library.northeastern.edu/files/neu:n009w2985>
    [Simulated LTE-M Uplink]: <https://repository.library.northeastern.edu/files/neu:n009w299f>
-   [DeepSense: Fast Wideband Spectrum Sensing Through Real-Time In-the-Loop Deep Learning]: <https://ieeexplore.ieee.org/abstract/document/9488764>
+   [D. Uvaydov, S. D’Oro, F. Restuccia and T. Melodia, "DeepSense: Fast Wideband Spectrum Sensing Through Real-Time In-the-Loop Deep Learning," IEEE INFOCOM 2021 - IEEE Conference on Computer Communications, 2021, pp. 1-10, doi: 10.1109/INFOCOM42981.2021.9488764.]: <https://ieeexplore.ieee.org/abstract/document/9488764>
    [here]: <https://ece.northeastern.edu/wineslab/papers/UvaydovInfocom21.pdf>
    [MATLAB]: <https://www.mathworks.com/help/lte/ug/lte-m-uplink-waveform-generation.html>
