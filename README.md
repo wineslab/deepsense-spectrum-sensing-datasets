@@ -11,7 +11,7 @@ This repository contains the code and links to the datasets curated and used in 
 
 ## Overview
 
-Spectrum sharing will be a key technology to tackle spectrum  scarcity  in  the  sub-6  GHz  bands.  To  fairly  access  the shared bandwidth, wireless users will necessarily need to quickly sense  large  portions  of  spectrum  and  opportunistically  access unutilized  bands. To that end we have developed two datasets to help evaluate spectrum sensing methodolgies: a over the air real-world dataset collected using 5 USRP N210s with 802.11 a/g PHY layer waveforms and a simulated MATLAB dataset with LTE-M uplink PHY layer waveforms.
+Spectrum sharing will be a key technology to tackle spectrum  scarcity  in  the  sub-6  GHz  bands.  To  fairly  access  the shared bandwidth, wireless users will necessarily need to quickly sense  large  portions  of  spectrum  and  opportunistically  access unutilized  bands. To that end we have developed two datasets to help evaluate spectrum sensing methodolgies: a over the air real-world dataset collected using 5 USRP N210s with 802.11 a/g PHY layer waveforms and a simulated MATLAB dataset with LTE-M uplink PHY layer waveforms. In both datasets, data is in the form of I/Qs or complex values.
 
 
 ### SDR 802.11 a/g:
