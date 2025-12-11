@@ -1,7 +1,7 @@
 # Dataset Release: A Real World IEEE 802.11 a/g Dataset and Simulated LTE-M Uplink Dataset for Spectrum Sensing
 
 
-This repository contains the code and links to the datasets curated and used in [D. Uvaydov, S. D’Oro, F. Restuccia and T. Melodia, "DeepSense: Fast Wideband Spectrum Sensing Through Real-Time In-the-Loop Deep Learning," IEEE INFOCOM 2021 - IEEE Conference on Computer Communications, 2021, pp. 1-10, doi: 10.1109/INFOCOM42981.2021.9488764.] The paper can be found for free [here] and cited using the key or citation found at the bottom
+This repository contains the code and links to the datasets curated and used in [D. Uvaydov, S. D’Oro, F. Restuccia and T. Melodia, "DeepSense: Fast Wideband Spectrum Sensing Through Real-Time In-the-Loop Deep Learning," IEEE INFOCOM 2021 - IEEE Conference on Computer Communications, 2021, pp. 1-10, doi: 10.1109/INFOCOM42981.2021.9488764.] The paper can be cited using the key or citation found at the bottom
 
 
 
